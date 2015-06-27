@@ -1,3 +1,8 @@
 #!/bin/bash -e
 
-docker run -v $PWD:/opt/fleet google/golang:1.3.1 /bin/bash -c "cd /opt/fleet && ./test"
+docker run -v $PWD:/gopath/src/github.com/coreos/fleet google/golang:1.4 /bin/bash -c "echo 'installing godep' && \
+  go get github.com/tools/godep && \
+  cd /gopath/src/github.com/coreos/fleet && \
+  echo 'restoring dependencies' && \
+  godep restore && \
+  ./test"
