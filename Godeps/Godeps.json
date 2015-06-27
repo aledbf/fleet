@@ -1,6 +1,6 @@
 {
 	"ImportPath": "github.com/coreos/fleet",
-	"GoVersion": "go1.3.3",
+	"GoVersion": "go1.4.2",
 	"Packages": [
 		"./..."
 	],
@@ -12,50 +12,50 @@
 		},
 		{
 			"ImportPath": "github.com/coreos/etcd/client",
-			"Comment": "v2.1.0-alpha.0-201-gebb7677",
-			"Rev": "ebb767765e8f7475fdad8b0c37b28841b6346d3d"
+			"Comment": "v2.1.0-alpha.1-79-gacca9cc",
+			"Rev": "acca9cc3a94fcdc053b3e8c2105bda3416f4bd2a"
 		},
 		{
 			"ImportPath": "github.com/coreos/etcd/pkg/types",
-			"Comment": "v2.1.0-alpha.0-201-gebb7677",
-			"Rev": "ebb767765e8f7475fdad8b0c37b28841b6346d3d"
+			"Comment": "v2.1.0-alpha.1-79-gacca9cc",
+			"Rev": "acca9cc3a94fcdc053b3e8c2105bda3416f4bd2a"
 		},
 		{
 			"ImportPath": "github.com/coreos/go-semver/semver",
-			"Rev": "a9a0c39c7e4a2929f73d4b757d1860fbb8e66d06"
+			"Rev": "568e959cd89871e61434c1143528d9162da89ef2"
 		},
 		{
 			"ImportPath": "github.com/coreos/go-systemd/activation",
-			"Comment": "v2-35-gcf3cdf7",
-			"Rev": "cf3cdf77462baaad163ad2d5d1984b9c1b493701"
+			"Comment": "v3-4-g9b2f329",
+			"Rev": "9b2f329b69ae0292a30f426867494f38af617a42"
 		},
 		{
 			"ImportPath": "github.com/coreos/go-systemd/dbus",
-			"Comment": "v2-35-gcf3cdf7",
-			"Rev": "cf3cdf77462baaad163ad2d5d1984b9c1b493701"
+			"Comment": "v3-4-g9b2f329",
+			"Rev": "9b2f329b69ae0292a30f426867494f38af617a42"
 		},
 		{
 			"ImportPath": "github.com/coreos/go-systemd/unit",
-			"Comment": "v2-35-gcf3cdf7",
-			"Rev": "cf3cdf77462baaad163ad2d5d1984b9c1b493701"
+			"Comment": "v3-4-g9b2f329",
+			"Rev": "9b2f329b69ae0292a30f426867494f38af617a42"
 		},
 		{
 			"ImportPath": "github.com/docker/libcontainer/netlink",
-			"Comment": "v1.1.0-44-g8c0303d",
-			"Rev": "8c0303d92862eccc4bb9a07d7dac9065e4a32014"
+			"Comment": "v2.1.0-2-g97f4592",
+			"Rev": "97f4592aa8b3fcb9e14c8b5f40a69821f47b9e8b"
 		},
 		{
 			"ImportPath": "github.com/godbus/dbus",
-			"Comment": "0-11-gcfab99a",
-			"Rev": "cfab99a9500db4ba03067996059d2fc425090bf3"
+			"Comment": "v2-6-ga5942de",
+			"Rev": "a5942dec6340eb0d57f43f2003c190ce06e43dea"
 		},
 		{
 			"ImportPath": "github.com/jonboulle/clockwork",
-			"Rev": "b473f398c464f1988327f67c9e6aa7fba62f80d2"
+			"Rev": "3f831b65b61282ba6bece21b91beea2edc4c887a"
 		},
 		{
 			"ImportPath": "github.com/rakyll/globalconf",
-			"Rev": "fd9ff89130a682478a0c94e893ff4affe570b002"
+			"Rev": "415abc325023f1a00cd2d9fa512e0e71745791a2"
 		},
 		{
 			"ImportPath": "github.com/rakyll/goini",
@@ -63,20 +63,15 @@
 		},
 		{
 			"ImportPath": "golang.org/x/crypto/ssh",
-			"Comment": "null-234",
-			"Rev": "60a80aaa50ff0e8506f61b1fa35078a24941be50"
+			"Rev": "ce6bda69189e9f4ff278a5e181691cd695f753ae"
 		},
 		{
 			"ImportPath": "golang.org/x/net/context",
-			"Rev": "a8c61998a557a37435f719980da368469c10bfed"
-		},
-		{
-			"ImportPath": "google.golang.org/api/google-api-go-generator",
-			"Rev": "d3edb0282bde692467788c50070a9211afe75cf3"
+			"Rev": "4dbd2a1007ff2b28b172e65b1ced9616645dd2b5"
 		},
 		{
 			"ImportPath": "google.golang.org/api/googleapi",
-			"Rev": "d3edb0282bde692467788c50070a9211afe75cf3"
+			"Rev": "d56f328dc27a4097cd0fc535e7c77807f48a2e84"
 		}
 	]
 }

@@ -58,6 +58,13 @@ func NewVersion(version string) (*Version, error) {
 	return &v, nil
 }
 
+func Must(v *Version, err error) *Version {
+	if err != nil {
+		panic(err)
+	}
+	return v
+}
+
 func (v *Version) String() string {
 	var buffer bytes.Buffer
 
@@ -175,4 +182,28 @@ func recursivePreReleaseCompare(versionA []string, versionB []string) int {
 	}
 
 	return recursivePreReleaseCompare(versionA[1:], versionB[1:])
+}
+
+// BumpMajor increments the Major field by 1 and resets all other fields to their default values
+func (v *Version) BumpMajor() {
+	v.Major += 1
+	v.Minor = 0
+	v.Patch = 0
+	v.PreRelease = PreRelease("")
+	v.Metadata = ""
+}
+
+// BumpMinor increments the Minor field by 1 and resets all other fields to their default values
+func (v *Version) BumpMinor() {
+	v.Minor += 1
+	v.Patch = 0
+	v.PreRelease = PreRelease("")
+	v.Metadata = ""
+}
+
+// BumpPatch increments the Patch field by 1 and resets all other fields to their default values
+func (v *Version) BumpPatch() {
+	v.Patch += 1
+	v.PreRelease = PreRelease("")
+	v.Metadata = ""
 }

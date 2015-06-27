@@ -8,7 +8,7 @@ import (
 	"path"
 	"strings"
 
-	ini "github.com/coreos/fleet/Godeps/_workspace/src/github.com/rakyll/goini"
+	ini "github.com/rakyll/goini"
 )
 
 const (
@@ -165,6 +165,8 @@ func getEnv(envPrefix, flagSetName, flagName string) string {
 	if flagSetName != "" {
 		flagSetName += "_"
 	}
+	flagName = strings.Replace(flagName, ".", "_", -1)
+	flagName = strings.Replace(flagName, "-", "_", -1)
 	envKey := strings.ToUpper(envPrefix + flagSetName + flagName)
 	return os.Getenv(envKey)
 }

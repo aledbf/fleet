@@ -12,7 +12,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/coreos/fleet/Godeps/_workspace/src/golang.org/x/crypto/ssh"
+	"golang.org/x/crypto/ssh"
 )
 
 type privKey struct {
@@ -175,7 +175,7 @@ func (r *keyring) Signers() ([]ssh.Signer, error) {
 		return nil, errLocked
 	}
 
-	s := make([]ssh.Signer, len(r.keys))
+	s := make([]ssh.Signer, 0, len(r.keys))
 	for _, k := range r.keys {
 		s = append(s, k.signer)
 	}

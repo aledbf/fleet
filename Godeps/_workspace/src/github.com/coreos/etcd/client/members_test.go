@@ -22,9 +22,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/coreos/fleet/Godeps/_workspace/src/golang.org/x/net/context"
+	"golang.org/x/net/context"
 
-	"github.com/coreos/fleet/Godeps/_workspace/src/github.com/coreos/etcd/pkg/types"
+	"github.com/coreos/etcd/pkg/types"
 )
 
 func TestMembersAPIActionList(t *testing.T) {

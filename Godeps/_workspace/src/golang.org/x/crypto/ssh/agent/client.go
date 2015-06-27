@@ -6,7 +6,7 @@
   Package agent implements a client to an ssh-agent daemon.
 
 References:
-  [PROTOCOL.agent]:    http://www.openbsd.org/cgi-bin/cvsweb/src/usr.bin/ssh/PROTOCOL.agent
+  [PROTOCOL.agent]:    http://cvsweb.openbsd.org/cgi-bin/cvsweb/src/usr.bin/ssh/PROTOCOL.agent?rev=HEAD
 */
 package agent
 
@@ -24,7 +24,7 @@ import (
 	"math/big"
 	"sync"
 
-	"github.com/coreos/fleet/Godeps/_workspace/src/golang.org/x/crypto/ssh"
+	"golang.org/x/crypto/ssh"
 )
 
 // Agent represents the capabilities of an ssh-agent.
